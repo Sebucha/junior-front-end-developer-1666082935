@@ -7,32 +7,29 @@ import ListingTasks from "./listingTasks"
 
 export default function TasksList() {
 
-    const icons = [
-        <i class="fa-solid fa-arrow-up"></i>,
-        <i class="fa-solid fa-arrow-right"></i>,
-        <i class="fa-sharp fa-solid fa-lock"></i>
-    ]
+    const completed = <i class="fa-solid fa-arrow-up green"></i>;
+    const active = <i class="fa-solid fa-arrow-right blue"></i>;
+    const blocked = <i class="fa-sharp fa-solid fa-lock gray"></i>;
 
     const [isActive, setActive] = useState(false)
-
-
+    const [icon, setIcon]= useState(blocked)
+    
 
     function handleClick() {
         setActive(!isActive)
     }
-    // function showIcon() {
-    //     if (isActive) {
-    //         return icons[1]
-    //     }
-    // }
+    function changeIcon(){
+        setIcon(active)
+    }
+   
 
     return (
         <div className="container">
             <header className="header">Your TASKS</header>
             <div className="tasksList">
-                {/* <span>{showIcon}</span> */}
                 <button onClick={handleClick}> Change state</button>
-                <span className={isActive ? 'blue' : "gray"}>
+                <span className={isActive ? 'blue': "gray"}>
+                    <span>{icon}</span>
                     <ListingTasks></ListingTasks>
                 </span>
             </div>

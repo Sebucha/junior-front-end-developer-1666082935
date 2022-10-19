@@ -1,0 +1,14 @@
+.bussinesContext {
+	display: flex;
+	text-transform: uppercase;
+	justify-content: flex-start;
+	text-align: center;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-grow: 2;
+	background-color: #fff;
+	height: 90vh;
+	border-radius: 8px;
+	padding: 16px 24px 16px 24px;
+	gap: 10px;
+}
