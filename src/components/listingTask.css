@@ -1,9 +1,0 @@
-.tableCell {
-	padding: 10px;
-	transition-duration: 0.3s;
-}
-.tableCell:hover {
-	border-radius: 8px;
-	background: #8699e6;
-	cursor: pointer;
-}

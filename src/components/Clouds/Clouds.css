@@ -1,0 +1,10 @@
+.clouds {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	border-radius: 8px;
+	width: 100%;
+	gap: 5px;
+}

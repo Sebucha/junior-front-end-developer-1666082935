@@ -1,9 +1,19 @@
-* {
+.tableCell {
+	padding: 10px;
+	transition-duration: 0.3s;
+  }
+  .tableCell:hover {
+	border-radius: 8px;
+	background: #8699e6;
+	cursor: pointer;
+  }
+  
+  * {
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-}
-.container {
+  }
+  .container {
 	display: flex;
 	text-align: left;
 	justify-content: left;
@@ -11,12 +21,10 @@
 	flex-grow: 1;
 	gap: 10px;
 	height: 100vh;
-	padding: 16px 24px 16px 24px;
 	position: relative;
-	/* width: 25%; */
-}
-
-.header {
+  }
+  
+  .header {
 	display: flex;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -24,8 +32,8 @@
 	padding: 16px 24px 16px 24px;
 	border-radius: 12px 12px 0 0;
 	background-color: #fff;
-}
-.tasksList {
+  }
+  .tasksList {
 	display: flex;
 	font-size: 12px;
 	font-weight: 500;
@@ -34,14 +42,15 @@
 	background-color: #fff;
 	flex-direction: column;
 	/* border: 1px solid black; */
-	
+  
 	height: 100%;
-}
-.task {
+  }
+  .task {
 	padding: 5px;
-}
-
-.task:hover {
+  }
+  
+  .task:hover {
 	background-color: #c2c2f0;
 	border-radius: 7px;
-}
+  }
+  
