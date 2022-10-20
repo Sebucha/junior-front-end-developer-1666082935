@@ -1,19 +1,30 @@
 import './Cloud.css'
 import { useState } from 'react'
-
+import CloudLabel from './CloudLabel'
 export default function Cloud() {
 
     const [read, setRead] = useState(false)
+    const [readMessage, setReadMessage] = useState(false)
 
-    function checkRead() {
+
+
+    function checkMessage() {
+        setReadMessage(true)
         setRead(true)
+
     }
 
 
     return (
-        <div className={read ? "old" : "cloud"} onClick={checkRead}>
-            <h3 >New message</h3>
-            <main>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</main>
+        <div className={read ? "old" : "cloud"} onClick={checkMessage}>
+            <div className='miniTitle'>
+                <div className={readMessage ? "readMesage" : "newMessage"} onClick={checkMessage}>
+                    NEW
+                </div>
+                <h3 >New message</h3>
+
+            </div>
+            <main>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </main>
         </div>
 
     )

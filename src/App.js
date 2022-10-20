@@ -7,7 +7,6 @@ import { useState } from 'react';
 
 
 
-
 function App() {
   const [tasks, setTasks] = useState(taskList);
   const [selectedID, setSelectedID] = useState(
@@ -15,17 +14,17 @@ function App() {
   );
 
   return (
-    <div className="App">
-      <ListingTasks
-        tasks={tasks}
-        setTasks={setTasks}
-        setSelectedID={setSelectedID}
-        
-      />
-      <BusinessContext
-        context={tasks.find((el) => el.id === selectedID)?.bussinesContext}
-      />
-    </div>
+      <div className="App">
+        <ListingTasks
+          tasks={tasks}
+          setTasks={setTasks}
+          setSelectedID={setSelectedID}
+
+        />
+        <BusinessContext
+          context={tasks.find((el) => el.id === selectedID)?.bussinesContext}
+        />
+      </div>
   );
 }
 

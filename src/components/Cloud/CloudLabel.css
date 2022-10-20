@@ -1,0 +1,28 @@
+.newMessage {
+	display: flex;
+	background-color: #0165ff;
+	border-radius: 12px;
+	color: #fff;
+	height: 20px;
+	width: 30px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 8px;
+	color: #f4f5f6;
+	font-weight: 600;
+}
+
+.readMessage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 8px;
+	font-weight: 600;
+	height: 20px;
+	width: 30px;
+	background-color: #f4f5f6;
+	border-radius: 12px;
+	color: #0165ff;
+}

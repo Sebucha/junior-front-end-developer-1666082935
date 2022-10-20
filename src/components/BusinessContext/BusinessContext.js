@@ -11,9 +11,8 @@ export default function BussinesContext({ context }) {
             <div className="bussinesContext">
                 <header className="header">bussines context</header>
                 <main className="contents">
-                    {/* {context} */}
                     <div className="clouds_b"><Clouds ></Clouds></div>
-                    <div className="label_b"><Label ></Label></div>
+                    <div className="label_b">{context}</div>
                 </main>
             </div>
         </div>
