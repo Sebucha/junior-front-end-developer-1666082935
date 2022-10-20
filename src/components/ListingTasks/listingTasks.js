@@ -1,6 +1,6 @@
 import './listingTask.css'
 import "../colors.css"
-import {  BrowserRouter as Router, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import Task from '../Task';
 
 export default function ListingTasks({ tasks, setTasks, setSelectedID }) {
@@ -22,13 +22,13 @@ export default function ListingTasks({ tasks, setTasks, setSelectedID }) {
 
   return (
     <Router>
-      <div className="container">
+      <div  style={{width:"5%"}}className="container">
         <header className="header">Your TASKS</header>
         <div className="tasksList">
           <table>
             <tbody>
               {tasks.map(({ id, title, state }) => (
-                <Link to={"/&{id}"}>
+                <Link to={"/&{id}"} style={{ textDecoration: 'none' }}>
                   <Task
                     key={id}
                     id={id}
