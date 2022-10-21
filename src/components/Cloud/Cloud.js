@@ -19,7 +19,7 @@ export default function Cloud() {
     return (
         <div className={read ? "old" : "cloud"} onClick={checkMessage}>
             <div className='miniTitle'>
-                <div className={readMessage ? "readMesage" : "newMessage"} onClick={checkMessage}>
+                <div className={readMessage ? "readMessage" : "newMessage"} onClick={checkMessage}>
                     NEW
                 </div>
                 <h3 >New message</h3>

@@ -14,17 +14,17 @@ function App() {
   );
 
   return (
-      <div className="App">
-        <ListingTasks
-          tasks={tasks}
-          setTasks={setTasks}
-          setSelectedID={setSelectedID}
+    <div className="App">
+      <ListingTasks
+        tasks={tasks}
+        setTasks={setTasks}
+        setSelectedID={setSelectedID}
 
-        />
-        <BusinessContext
-          context={tasks.find((el) => el.id === selectedID)?.bussinesContext}
-        />
-      </div>
+      />
+      <BusinessContext
+        context={tasks.find((el) => el.id === selectedID)?.bussinesContext}
+      />
+    </div>
   );
 }
 

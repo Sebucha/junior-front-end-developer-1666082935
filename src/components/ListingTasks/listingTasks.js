@@ -9,20 +9,17 @@ export default function ListingTasks({ tasks, setTasks, setSelectedID }) {
     if (taskIndex < 0 || tasks[taskIndex].state.blocked) return;
     setSelectedID(taskIndex);
 
-    // Reset all other entries
     const tasksCopy = tasks.map((el) => ({
       ...el,
       state: { ...el.state, [state]: !value },
     }));
-    // apply active state to the one selected
     tasksCopy[taskIndex].state[state] = value;
-    // overwrite the state with shallow copy
     setTasks(tasksCopy);
   }
 
   return (
     <Router>
-      <div  style={{width:"5%"}}className="container">
+      <div style={{ width: "5%" }} className="container">
         <header className="header">Your TASKS</header>
         <div className="tasksList">
           <table>
